@@ -1,8 +1,8 @@
-# cpp_lab  
+# CPP_LAB  
 
-Welcome to **cpp_lab**, a repository dedicated to my journey of diving back into C++. C++ was the first programming language I learned, and through this repository, I aim to rediscover its depth and versatility. My goal is to make C++ my primary programming language once again, focusing on modern practices and advanced concepts.  
+Welcome to **CPP_LAB**, a repository dedicated to my journey of diving back into C++. C++ was the first programming language I learned, and through this repository, I aim to rediscover its depth and versatility. My goal is to make C++ my primary programming language once again, focusing on modern practices and advanced concepts.  
 
-## Why cpp_lab?  
+## Why CPP_LAB?  
 - To revisit and strengthen my understanding of C++.  
 - To explore modern C++ features and best practices.  
 - To document my learning process and projects for reference and improvement.  
