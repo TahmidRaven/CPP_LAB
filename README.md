@@ -18,6 +18,7 @@ This repository will include:
 Here’s a checklist of topics I plan to go through. I’ll update this as I complete each one:  
 
 - [x] Basics of C++ (first program , variables, datatypes)  
+- [ ] Basics of C++ (Const Variable, NameSpaces)  
 - [ ] Basics of C++ (syntax, loops, arrays, functions)  
 - [ ] Object-Oriented Programming (OOP)  
 - [ ] The Standard Template Library (STL)  
@@ -40,7 +41,7 @@ Feel free to explore the code and notes. Contributions or suggestions are welcom
 
 ## Contact  
 If you want to connect or discuss anything about C++, feel free to reach out!  
-- **Email**: md.tahmid.iqbal@g.bracu.ac.bd  
+- **Email**: tahmidraven@gmail.com
 - **Website**: [tahmidraven.online](https://tahmidraven.online)  
 
 ---
