@@ -18,7 +18,7 @@ This repository will include:
 Here’s a checklist of topics I plan to go through. I’ll update this as I complete each one:  
 
 - [x] Basics of C++ (first program , variables, datatypes)  
-- [ ] Basics of C++ (Const Variable, NameSpaces)  
+- [x] Basics of C++ (Const Variable, NameSpaces)  
 - [ ] Basics of C++ (syntax, loops, arrays, functions)  
 - [ ] Object-Oriented Programming (OOP)  
 - [ ] The Standard Template Library (STL)  
