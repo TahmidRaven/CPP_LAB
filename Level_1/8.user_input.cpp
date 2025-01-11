@@ -11,7 +11,7 @@ int main(){
     std::cout << "Enter your name: " << "\n";
    // std::cin >> name;   // only takes the first word
 
-    std::getline(std::cin, name);   // can take multiple words
+    std::getline(std::cin >>std::ws, name);   // can take multiple words
 
     std::cout << "Hello There Lord, " << name << "\n";
     std::cout << "Enter your age: " << "\n";
