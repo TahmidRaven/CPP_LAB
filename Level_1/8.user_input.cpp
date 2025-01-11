@@ -9,11 +9,15 @@ int main(){
     std::string name;
 
     std::cout << "Enter your name: " << "\n";
-    std::cin >> name;
+   // std::cin >> name;   // only takes the first word
+
+    std::getline(std::cin, name);   // can take multiple words
+
     std::cout << "Hello There Lord, " << name << "\n";
     std::cout << "Enter your age: " << "\n";
     std::cin >> age;
     std::cout << "O MY Goddo! You are " << age << " years old" << "\n";
+
 
     return 0;
 
