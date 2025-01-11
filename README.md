@@ -17,9 +17,11 @@ This repository will include:
 
 Here’s a checklist of topics I plan to go through. I’ll update this as I complete each one:  
 
-- [x] Basics of C++ (first program , variables, datatypes)  
-- [x] Basics of C++ (Const Variable, NameSpaces, Typedef_Aliases)  
-- [ ] Basics of C++ (Arithmatic_operations, loops, arrays, functions)  
+- [x] Basics of C++  
+  - First program, variables, datatypes  
+  - Const Variable, NameSpaces, Typedef Aliases  
+  - Arithmetic operations, Type Conversion, User Input  
+- [ ] Basics of C++ (loops, arrays, functions)  
 - [ ] Object-Oriented Programming (OOP)  
 - [ ] The Standard Template Library (STL)  
 - [ ] Pointers and Memory Management  
