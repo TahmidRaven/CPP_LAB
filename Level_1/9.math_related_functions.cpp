@@ -6,6 +6,8 @@ int main(){
     double x = 3;
     double y = 4;
     double z;
+
+    double t = 3.14;
     
 
     z = std::max(x, y);
@@ -22,4 +24,13 @@ int main(){
 
     z = abs(-9);
     std::cout << "absolute value of -9 is "<< z << "\n";
+
+    z = round(t);
+    std::cout << "rounding off " << t << " is "<< z << "\n";
+
+    z = ceil(t);
+    std::cout << "ceiling of " << t << " is "<< z << "\n";
+
+    z = floor(t);
+    std::cout << "floor of " << t << " is "<< z << "\n";
 }
