@@ -20,7 +20,7 @@ Here’s a checklist of topics I plan to go through. I’ll update this as I com
 - [x] Basics of C++  
   - First program, variables, datatypes  
   - Const Variable, NameSpaces, Typedef Aliases  
-  - Arithmetic operations, Type Conversion, User Input, cmath libray (math functions)  
+  - Arithmetic operations, Type Conversion, User Input, cmath libray (math functions) , Hypotenuse calculation
 - [ ] Basics of C++ (loops, arrays, functions)  
 - [ ] Object-Oriented Programming (OOP)  
 - [ ] The Standard Template Library (STL)  
