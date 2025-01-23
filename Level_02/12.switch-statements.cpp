@@ -44,7 +44,7 @@ int main() {
             std::cout << "December has 31 days." << std::endl;
             break;
         default:
-            std::cout << "Invalid month." << std::endl;
+            std::cout << "Invalid month. Enter 1-12" << std::endl;
     }
 
     return 0;
