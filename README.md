@@ -17,11 +17,11 @@ This repository will include:
 
 Here’s a checklist of topics I plan to go through. I’ll update this as I complete each one:  
 
-- [x] Basics of C++  
+- [x] Level__00_01_02 Basics of C++  
   - First program, variables, datatypes  
   - Const Variable, NameSpaces, Typedef Aliases  
   - Arithmetic operations, Type Conversion, User Input, cmath libray (math functions) , Hypotenuse calculation
-  - conditional operations(if-else-elif, switch)
+  - conditional operators(if-else-elif, switch), logical operators
 - [ ] Basics of C++ (loops, arrays, functions)  
 - [ ] Object-Oriented Programming (OOP)  
 - [ ] The Standard Template Library (STL)  
