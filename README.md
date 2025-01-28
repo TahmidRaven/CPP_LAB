@@ -21,7 +21,9 @@ Here’s a checklist of topics I plan to go through. I’ll update this as I com
   - First program, variables, datatypes, Const Variable, NameSpaces, Typedef Aliases  
   - Arithmetic operations, Type Conversion, User Input, cmath libray, Hypotenuse calculation
   - conditional operators(if-else-elif, switch), Ternary Operators, logical operators, Temp Conversion, string manipulation
-- [ ] Basics of C++ (loops, arrays, functions)  
+- [x] Level__02_03 Basics of C++ 
+  - while,do while, for loops
+  -
 - [ ] Object-Oriented Programming (OOP)  
 - [ ] The Standard Template Library (STL)  
 - [ ] Pointers and Memory Management  
