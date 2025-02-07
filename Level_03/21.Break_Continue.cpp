@@ -9,7 +9,7 @@ int main(){
             if(i == 13){
 
                 break;
-                continue; 
+                // continue; 
             
             }
             std::cout << i << "\n";
