@@ -23,7 +23,7 @@ Here’s a checklist of topics I plan to go through. I’ll update this as I com
   - conditional operators(if-else-elif, switch), Ternary Operators, logical operators, Temp Conversion, string manipulation
 - [x] Level__02_03 Basics of C++ 
   - while, do while, for loops, do_while, break, continue.
-  - 
+  -  
   -
 - [ ] Object-Oriented Programming (OOP)  
 - [ ] The Standard Template Library (STL)  
