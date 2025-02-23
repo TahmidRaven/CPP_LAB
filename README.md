@@ -39,7 +39,7 @@ Here’s a checklist of topics I plan to go through. I’ll update this as I com
 ## How to Use This Repository  
 Feel free to explore the code and notes. Contributions or suggestions are welcome if you find ways to improve or extend the content!  
 
-## Future Goals  
+## Future Goals   
 - Build real-world applications using C++.  
 - Dive deeper into advanced C++ libraries and frameworks.  
 - Optimize and refactor older code to adhere to modern C++ standards.  
