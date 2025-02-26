@@ -34,7 +34,7 @@ Here’s a checklist of topics I plan to go through. I’ll update this as I com
 - [ ] Multithreading and Concurrency  
 - [ ] Debugging and Profiling Techniques  
 - [ ] Advanced Topics (Smart Pointers, Move Semantics, etc.)  
-- [ ] Algorithms and Data Structures in C++  
+- [ ] Algorithms and Data Structures in C++   
 
 ## How to Use This Repository  
 Feel free to explore the code and notes. Contributions or suggestions are welcome if you find ways to improve or extend the content!  
