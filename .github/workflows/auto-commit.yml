@@ -2,7 +2,7 @@ name: Auto Commit
 
 on:
   schedule:
-        - cron: "40 18 * * *"  # Runs at 00:35 Dhaka Time (18:35 UTC)
+    - cron: "50 18 * * *"  # Runs at 00:50 Dhaka Time (18:50 UTC)
   workflow_dispatch:
 
 jobs:
