@@ -26,8 +26,9 @@ jobs:
     - name: Write to AutoRaven.md
       run: |
         DATE=$(TZ=Asia/Dhaka date +"%Y-%m-%d %H:%M:%S")  # Get exact timestamp in Dhaka Time
-        echo "Automated commit at $DATE (Dhaka Time)" >> AutoRaven.md  # Write Dhaka Time to file
+        echo -e "\nAutomated commit at $DATE (Dhaka Time)" >> AutoRaven.md  # Ensure newline before writing
         git add AutoRaven.md  # Stage the change
+
 
     # Check the Git status and diff (for debugging)
     - name: Check Git Status
