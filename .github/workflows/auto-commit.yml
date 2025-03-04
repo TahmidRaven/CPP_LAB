@@ -3,8 +3,7 @@ name: Auto Commit
 on:
   schedule:
     - cron: "50 18 * * *"  # Runs at 00:50 Dhaka Time (18:50 UTC)
-    - cron: "0 4 * * *"   # 10:00 AM Dhaka Time (04:00 UTC)
-    - cron: "0 12 * * *"  # 6:00 PM Dhaka Time (12:00 UTC)
+    - cron: "05 19 * * *"  # Runs at 00:50 Dhaka Time (18:50 UTC)
     - cron: "0 17 * * *"  # 11:00 PM Dhaka Time (17:00 UTC)
   workflow_dispatch:
 
@@ -26,8 +25,8 @@ jobs:
     # Write to AutoRaven.md
     - name: Write to AutoRaven.md
       run: |
-        DATE=$(date +"%Y-%m-%d %H:%M:%S")  # Get exact timestamp
-        echo "Automated commit at $DATE" >> AutoRaven.md  # Write to AutoRaven.md
+        DATE=$(TZ=Asia/Dhaka date +"%Y-%m-%d %H:%M:%S")  # Get exact timestamp in Dhaka Time
+        echo "Automated commit at $DATE (Dhaka Time)" >> AutoRaven.md  # Write Dhaka Time to file
         git add AutoRaven.md  # Stage the change
 
     # Check the Git status and diff (for debugging)
@@ -39,6 +38,6 @@ jobs:
     # Commit and Push
     - name: Commit and Push
       run: |
-        DATE=$(date +"%Y-%m-%d %H:%M:%S")  # Get exact timestamp
-        git commit -m "Automated commit at $DATE" || exit 0  # Avoid error if no changes
+        DATE=$(TZ=Asia/Dhaka date +"%Y-%m-%d %H:%M:%S")  # Get exact timestamp in Dhaka Time
+        git commit -m "Automated commit at $DATE (Dhaka Time)" || exit 0  # Avoid error if no changes
         git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} main
