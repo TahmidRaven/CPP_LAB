@@ -1,0 +1,37 @@
+# name: AutoRaven
+
+# on:
+#   schedule:
+#     - cron: '10 01 * * *'  # Every day at midnight UTC to runs every 7-8 min set cron to '*/1 * * * *'
+
+# jobs:
+#   commit:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - name: Checkout repository
+#       uses: actions/checkout@v2
+#       with:
+#         ref: main 
+
+#     - name: Create file and commit
+#       run: |
+#         FILE="commit_number.md"
+#         if [ ! -f "$FILE" ]; then
+#           echo "Hello, my name is bishwa shah" > "$FILE"
+#           echo "commit number: 1" >> "$FILE"
+#         else
+#           CURRENT_COUNT=$(grep -oP 'commit number: \K\d+' "$FILE")
+#           if [ -z "$CURRENT_COUNT" ]; then
+#             CURRENT_COUNT=0
+#           fi
+#           NEXT_COUNT=$((CURRENT_COUNT + 1))
+#           sed -i "/commit number: /c\commit number: $NEXT_COUNT" "$FILE"
+#         fi
+#         git config --global user.name "TahmidRaven"
+#         git config --global user.email "raven.of.the.endless@gmail.com"
+#         git add "$FILE"
+#         git commit -m "Hello, my name is TahmidRaven and I have committed $NEXT_COUNT times"
+#         git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/beesou777/mean-commit.git
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
