@@ -2,32 +2,42 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: "0 10 * * *"   # 10:00 AM UTC
-    - cron: "20 23 * * *"  # 11:14 PM UTC
-    - cron: "0 1 * * *"    # 1:00 AM UTC
-  workflow_dispatch:  # Allows manual triggering
+    - cron: "0 10 * * *"  # 10 AM UTC
+    - cron: "46 23 * * *"  # 10 PM UTC
+    - cron: "0 1 * * *"   # 1 AM UTC
+  workflow_dispatch:
 
 jobs:
-  commit:
+  auto-commit:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+    # Check out the repository
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Set Up Git
-        run: |
-          git config --global user.name "TahmidRaven"
-          git config --global user.email "raven.of.the.endless@gmail.com"
+    # Set up Git (configure name and email)
+    - name: Set Up Git
+      run: |
+        git config --global user.name "Lisan"
+        git config --global user.email "your-email@example.com"
 
-      - name: Write to README.md
-        run: |
-          DATE=$(date +"%Y-%m-%d %H:%M:%S")  # Get exact timestamp
-          echo "Automated commit at $DATE" >> README.md  # Write to README.md
-          git add README.md  # Stage the change
+    # Write to README.md
+    - name: Write to README.md
+      run: |
+        DATE=$(date +"%Y-%m-%d %H:%M:%S")  # Get exact timestamp
+        echo "Automated commit at $DATE" >> README.md  # Write to README.md
+        git add README.md  # Stage the change
 
-      - name: Commit and Push
-        run: |
-          DATE=$(date +"%Y-%m-%d %H:%M:%S")  # Get exact timestamp
-          git commit -m "Automated commit at $DATE" || exit 0  # Avoid error if no changes
-          git push origin main  # Pushes to 'main' branch explicitly
+    # Check the Git status and diff (for debugging)
+    - name: Check Git Status
+      run: |
+        git status
+        git diff README.md  # Check what has changed in the README.md file
+
+    # Commit and Push
+    - name: Commit and Push
+      run: |
+        DATE=$(date +"%Y-%m-%d %H:%M:%S")  # Get exact timestamp
+        git commit -m "Automated commit at $DATE" || exit 0  # Avoid error if no changes
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} main
