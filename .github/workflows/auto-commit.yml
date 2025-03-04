@@ -2,9 +2,9 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: "0 10 * * *"  # 10 AM UTC
-    - cron: "15 23 * * *"  # 10 PM UTC
-    - cron: "0 1 * * *"   # 1 AM UTC
+    - cron: "0 10 * * *"   # 10:00 AM UTC
+    - cron: "14 23 * * *"  # 11:14 PM UTC
+    - cron: "0 1 * * *"    # 1:00 AM UTC
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -17,17 +17,17 @@ jobs:
 
       - name: Set Up Git
         run: |
-          git config --global user.name "Your Name"
-          git config --global user.email "your-email@example.com"
+          git config --global user.name "TahmidRaven"
+          git config --global user.email "raven.of.the.endless@gmail.com"
 
-      - name: Make Changes
+      - name: Write to README.md
         run: |
           DATE=$(date +"%Y-%m-%d %H:%M:%S")  # Get exact timestamp
-          echo "Automated commit at $DATE" >> changes.txt  # Example update
-          git add .
+          echo "Automated commit at $DATE" >> README.md  # Write to README.md
+          git add README.md  # Stage the change
 
       - name: Commit and Push
         run: |
           DATE=$(date +"%Y-%m-%d %H:%M:%S")  # Get exact timestamp
           git commit -m "Automated commit at $DATE" || exit 0  # Avoid error if no changes
-          git push origin main  # Pushes to 'main' branch explicitly change to git push if main isn't your branch
+          git push origin main  # Pushes to 'main' branch explicitly
