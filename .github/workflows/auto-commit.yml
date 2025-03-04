@@ -19,8 +19,8 @@ jobs:
     # Set up Git (configure name and email)
     - name: Set Up Git
       run: |
-        git config --global user.name "Lisan"
-        git config --global user.email "your-email@example.com"
+        git config --global user.name "TahmidRaven"
+        git config --global user.email "raven.of.the.endless@gmail.com"
 
     # Write to README.md
     - name: Write to README.md
