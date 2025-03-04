@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "0 10 * * *"  # 10 AM UTC
     - cron: "46 23 * * *"  # 10 PM UTC
-    - cron: "0 1 * * *"   # 1 AM UTC
+    - cron: "05 1 * * *"   # 1 AM UTC
   workflow_dispatch:
 
 jobs:
