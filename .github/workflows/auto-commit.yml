@@ -3,6 +3,9 @@ name: Auto Commit
 on:
   schedule:
     - cron: "50 18 * * *"  # Runs at 00:50 Dhaka Time (18:50 UTC)
+    - cron: "0 4 * * *"   # 10:00 AM Dhaka Time (04:00 UTC)
+    - cron: "0 12 * * *"  # 6:00 PM Dhaka Time (12:00 UTC)
+    - cron: "0 17 * * *"  # 11:00 PM Dhaka Time (17:00 UTC)
   workflow_dispatch:
 
 jobs:
